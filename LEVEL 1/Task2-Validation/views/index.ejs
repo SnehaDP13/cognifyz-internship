@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cognifyz | Task 2 Secure Portal</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        /* Success Overlay */
+        .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); display: flex; justify-content: center; align-items: center; z-index: 9999; }
+        .popup-card { background: #111; padding: 50px; border-radius: 30px; text-align: center; border: 1px solid #333; box-shadow: 0 0 50px rgba(0, 255, 136, 0.2); }
+
+        /* Custom Animation: Green Circle with Red Tick */
+        .success-icon { width: 100px; height: 100px; margin: 0 auto 20px; }
+        .circle { fill: #00ff88; animation: grow 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; transform-origin: center; transform: scale(0); }
+        .tick { fill: none; stroke: #ff3333; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 50; stroke-dashoffset: 50; animation: draw-tick 0.4s ease-out 0.6s forwards; }
+
+        @keyframes grow { to { transform: scale(1); } }
+        @keyframes draw-tick { to { stroke-dashoffset: 0; } }
+
+        /* Layout Styles */
+        .warning-text { color: #ff3333; font-size: 0.7rem; font-weight: 900; text-align: center; margin: 15px 0; letter-spacing: 2px; text-transform: uppercase; border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 5px 0; }
+    </style>
+</head>
+<body>
+    <% if (success) { %>
+        <div class="overlay">
+            <div class="popup-card">
+                <svg class="success-icon" viewBox="0 0 100 100">
+                    <circle class="circle" cx="50" cy="50" r="45"/>
+                    <path class="tick" d="M30 50 L45 65 L70 35"/>
+                </svg>
+                <h2 style="color: #ffffff; margin-bottom: 25px; font-weight: 900;">SUCCESSFULLY REGISTERED</h2>
+                <button class="btn-green" onclick="window.location.href='/'">CONTINUE</button>
+            </div>
+        </div>
+    <% } %>
+
+    <div class="premium-card">
+        <div class="brand-header">
+            <div class="brand-name">Cognifyz</div>
+            <div class="tagline">Where Data Meets Intelligence</div>
+        </div>
+
+        <h2>REGISTRATION</h2>
+
+        <form action="/register" method="POST" onsubmit="return validateForm()">
+            <input type="text" name="name" class="input-field" placeholder="FULL NAME" required>
+            
+            
+            
+
+            <input type="email" name="email" class="input-field" placeholder="EMAIL ADDRESS" required>
+            <input type="password" name="pass" id="pass" class="input-field" placeholder="PASSWORD(8+ characters)" required>
+            
+            <% if (error) { %>
+                <p style="color: #ff3333; font-size: 0.8rem; font-weight: 800; text-align: center;"><%= error %></p>
+            <% } %>
+
+            <button type="submit" class="btn-green">REGISTER NOW</button>
+        </form>
+
+        <div class="user-list" style="margin-top: 30px; border-top: 1px solid #333; padding-top: 15px;">
+            <h3 style="color: #00ff88; font-size: 0.8rem; margin-bottom: 10px;">STORED DATA LOGS:</h3>
+            <% users.forEach(user => { %>
+                <div style="font-size: 0.75rem; color: #888; margin-bottom: 6px; background: #1a1a1a; padding: 8px; border-radius: 6px;">
+                    <b style="color: #fff;"><%= user.name %></b> - Registered at <%= user.time %>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            const p = document.getElementById('pass').value;
+            if (p.length < 8) {
+                alert("CLIENT VALIDATION: Security Key must be 8+ characters.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

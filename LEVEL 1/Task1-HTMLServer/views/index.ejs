@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cognifyz | Premium Registration</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="premium-card">
+        <div class="brand-header">
+            <div class="brand-name">Cognifyz</div>
+            <div class="tagline">Where Data Meets Intelligence</div>
+        </div>
+
+        <% if (data) { %>
+            <div style="text-align: center;">
+                <h2 style="color: #ffffff;">ENTRY LOGGED</h2>
+                <p style="font-weight: 700;">SYSTEM ACCESSED BY: <%= data.name %></p>
+                <button class="btn-shiny" style="margin-top: 20px;" onclick="window.location.href='/'">Restart Session</button>
+            </div>
+        <% } else { %>
+            <h2>REGISTRATION</h2>
+            <form action="/submit" method="POST">
+                <input type="text" name="name" class="input-field" placeholder="FULL NAME" required>
+                <input type="email" name="email" class="input-field" placeholder="EMAIL ADDRESS" required>
+                
+                <select name="role" class="input-field">
+                    <option value="Full Stack Intern">FULL STACK INTERN</option>
+                    <option value="Security Analyst">SECURITY ANALYST</option>
+                    <option value="AI Researcher">AI RESEARCHER</option>
+                </select>
+
+                <button type="submit" class="btn-shiny">Submit</button>
+            </form>
+        <% } %>
+    </div>
+</body>
+</html>
