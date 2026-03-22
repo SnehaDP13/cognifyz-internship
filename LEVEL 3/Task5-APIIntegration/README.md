@@ -22,10 +22,10 @@ To implement RESTful APIs and connect frontend with backend.
 
 ## 📸 Output
 
-<img width="1906" height="1079" alt="Screenshot 2026-03-22 121957" src="https://github.com/user-attachments/assets/16090b10-8574-496e-9f60-6634359f1b88" />
-<img width="1919" height="1079" alt="Screenshot 2026-03-22 121939" src="https://github.com/user-attachments/assets/ef2b97f0-42f8-4dd8-801a-31ff1501e000" />
-<img width="1918" height="1079" alt="Screenshot 2026-03-22 121927" src="https://github.com/user-attachments/assets/10a770de-60bf-4ed0-bf93-d912057b07b2" />
-<img width="1913" height="1078" alt="Screenshot 2026-03-22 121915" src="https://github.com/user-attachments/assets/31d509bc-8840-4f7e-b7ef-d0caa04b88cc" />
-<img width="1919" height="1078" alt="Screenshot 2026-03-22 121844" src="https://github.com/user-attachments/assets/27f89ea6-7b90-4fa1-a80f-ec218f63e16e" />
-<img width="1919" height="1076" alt="Screenshot 2026-03-22 121829" src="https://github.com/user-attachments/assets/068ee693-f49f-4ba2-89e6-21b10cce70e8" />
-<img width="1919" height="1079" alt="Screenshot 2026-03-22 121818" src="https://github.com/user-attachments/assets/bd49b181-d511-4ca6-9ab0-3e7605871004" />
+<img width="1919" height="1079" alt="Screenshot 2026-03-22 121818" src="https://github.com/user-attachments/assets/0798d573-f537-47a6-b9ef-b9a704a18c87" />
+<img width="1919" height="1076" alt="Screenshot 2026-03-22 121829" src="https://github.com/user-attachments/assets/2132293e-d7bd-4506-9310-72490c340a16" />
+<img width="1919" height="1078" alt="Screenshot 2026-03-22 121844" src="https://github.com/user-attachments/assets/d6f583b8-7424-4e2d-955c-390f3d81b6d8" />
+<img width="1913" height="1078" alt="Screenshot 2026-03-22 121915" src="https://github.com/user-attachments/assets/e9b1cf77-d813-4f20-8755-4467210a8391" />
+<img width="1918" height="1079" alt="Screenshot 2026-03-22 121927" src="https://github.com/user-attachments/assets/7f07e8ae-1285-49a7-8ac3-33c337a05996" />
+<img width="1919" height="1079" alt="Screenshot 2026-03-22 121939" src="https://github.com/user-attachments/assets/d91a2560-5e02-4ef0-aa3c-7eb6ea6e5e3f" />
+<img width="1906" height="1079" alt="Screenshot 2026-03-22 121957" src="https://github.com/user-attachments/assets/77986ea3-2a46-4c7f-be15-d0ac869c04af" />
