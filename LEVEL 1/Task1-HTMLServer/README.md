@@ -20,8 +20,12 @@ To understand basic HTML structure and implement server-side interaction using N
 
 ## ▶️ How to Run
 
-```bash
-npm install
-node server.js
-```
+# Initialize the project
+npm init -y
+
+# Install the essentials
+npm install express ejs
+
+# Start the server
+node app.js
 
