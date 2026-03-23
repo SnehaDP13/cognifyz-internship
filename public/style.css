@@ -1,0 +1,106 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #050505; /* Deep Black Background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+/* Premium Card (Glassmorphism) */
+.premium-card {
+    background: #0f0f0f;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #222;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+/* Brand Header */
+.brand-name {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 0.7rem;
+    color: #666;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+/* Form Styling */
+.input-field {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.9rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-field:focus {
+    border-color: #00ff88;
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.2);
+}
+
+.btn-green {
+    width: 100%;
+    padding: 15px;
+    background-color: #00ff88;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 0.9rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-green:hover {
+    background-color: #00cc6e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+}
+
+/* Security Logs List */
+.user-list h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Responsiveness */
+@media (max-width: 480px) {
+    .premium-card {
+        margin: 20px;
+        padding: 25px;
+    }
+}
